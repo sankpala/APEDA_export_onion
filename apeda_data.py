@@ -51,7 +51,7 @@ def connect_db(url):
   # Create a new client and connect to the server
   client = MongoClient(uri, server_api=ServerApi('1'))
   client.admin.command('ping')
-  table=client.india.onion_import
+  table=client.india.onion_export
   return table
 
 def submit_page(commodity,year):
